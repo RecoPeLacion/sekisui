@@ -1,0 +1,56 @@
+.Header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.HeaderContainer {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.HeaderRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.HeaderLogo {
+    display: flex;
+    align-items: center;
+    img {
+        max-width: 260px;
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            max-width: 214px;
+        }
+    }
+}
+
+.HeaderButton {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: #1079C2;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #1079C2;
+        padding: 14px 20px;
+        font-weight: 700;
+        border-radius: 100px;
+        width: 243px;
+        text-align: center;
+        box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
+    }
+}
