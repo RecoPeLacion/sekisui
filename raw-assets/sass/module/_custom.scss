@@ -739,12 +739,187 @@
 // flow
 .Flow {
     padding-top: calc(50px + (165 - 50) * ((100vw - 768px) / (1900 - 768)));
+    padding-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));;
+    position: relative;
     @media screen and (max-width: 767px) {
         padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .OverlayImg {
+        svg {
+            width: calc(53px + (192 - 53) * ((100vw - 768px) / (1900 - 768)));
+            height: calc(228px + (821 - 228) * ((100vw - 768px) / (1900 - 768)));
+            top: 0;
+            @media screen and (max-width: 767px) {
+                width: 53px;
+                height: 228px;
+            }
+        }
     }
 }
 
 .FlowContainer {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FlowWrapper {
+    background: rgba(16, 121, 194, 0.04);
+    padding: calc(20px + (120 - 20) * ((100vw - 768px) / (1900 - 768))) calc(25px + (120 - 25) * ((100vw - 768px) / (1900 - 768)));
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: calc(10px + (60 - 10) * ((100vw - 768px) / (1900 - 768)));
+        top: calc(20px + (120 - 20) * ((100vw - 768px) / (1900 - 768)));
+        bottom: calc(20px + (120 - 20) * ((100vw - 768px) / (1900 - 768)));
+        width: 2px;
+        background-color: #1079C2;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        padding: 20px 25px;
+    }
+}
+
+.FlowList {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    @media screen and (max-width: 767px) {
+        gap: 60px;
+    }
+    li {
+        position: relative;
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        &::after {
+            content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 62 23" fill="none"><path d="M31 23L61.3109 0.5H0.689112L31 23Z" fill="%231079C2"/></svg>');
+            position: absolute;
+            bottom: -50px;
+            width: 70px;
+            height: 30px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            @media screen and (max-width: 767px) {
+                bottom: -48px;
+            }
+        }
+    }
+}
+
+.FlowListRow {
+    display: flex;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.FlowListLeft {
+    background-color: #1079C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.FlowListSteps {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 767px) {
+        flex-direction: row;
+    }
+}
+
+.StepName {
+    color: #FFF;
+    text-align: center;
+    font-family: $montserat;
+    font-size: calc(20px + (22 - 20) * ((100vw - 768px) / (1900 - 768)));
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(20px + (22 - 20) * ((100vw - 768px) / (1900 - 768)));
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+}
+
+.StepNumber {
+    color: #fff;
+    text-align: center;
+    font-family: $montserat;
+    font-size: calc(20px + (42 - 20) * ((100vw - 768px) / (1900 - 768)));
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(20px + (42 - 20) * ((100vw - 768px) / (1900 - 768)));
+    letter-spacing: 0.42px;
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+}
+
+.FlowListRight {
+    flex: 1;
+}
+
+.FlowListContent {
+    background-color: #fff;
+    padding: calc(15px + (50 - 15) * ((100vw - 768px) / (1900 - 768)));
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+    }
+    h3 {
+        color: #1079C2;
+        font-family: YuGothic;
+        font-size: calc(24px + (36 - 24) * ((100vw - 768px) / (1900 - 768)));
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+           font-size: 24px; 
+        }
+    }
+    p {
+        color: #000;
+        font-family: YuGothic;
+        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        font-style: normal;
+        font-weight: 700;
+        line-height: 180%;
+        letter-spacing: 0.16px;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+}
+
+// area
+.Area {
+    padding-top: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    padding-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.AreaContainer {
     max-width: 1400px;
     width: 100%;
     margin-left: auto;
@@ -755,7 +930,103 @@
     }
 }
 
-.FlowWrapper {
+.AreaImg {
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+}
+
+// faq 
+.Faq {
+    padding-top: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    padding-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.FaqTag {
+    font-weight: 700;
+}
+
+.FaqContainer {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FaqList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (max-width: 767px) {
+        gap: 10px;
+    }
+}
+
+.FaqRow {
+    display: flex;
+    align-items: center;
+}
+
+.FaqCard {
     background: rgba(16, 121, 194, 0.04);
-    padding: 120px 120px;
+    padding: calc(30px + (90 - 30) * ((100vw - 768px) / (1900 - 768))) 0;
+    @media screen and (max-width: 767px) {
+        padding: 30px 0;
+    }
+}
+
+.FaqLeft {
+    width: calc(55px + (200 - 55) * ((100vw - 768px) / (1900 - 768)));
+    @media screen and (max-width: 767px) {
+        width: 55px;
+    }
+}
+
+.FaqRight {
+    flex: 1;
+    h4 {
+        color: #1079C2;
+        font-family: YuGothic;
+        font-size: calc(14px + (24 - 14) * ((100vw - 768px) / (1900 - 768)));
+        font-style: normal;
+        font-weight: 700;
+        line-height: 180%; /* 43.2px */
+        letter-spacing: 0.24px;
+        margin-bottom: 10px;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    p {
+        color: #000;
+        font-family: YuGothic;
+        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        font-style: normal;
+        font-weight: 700;
+        line-height: 180%; /* 28.8px */
+        letter-spacing: 0.16px;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.FaqQ {
+    color: #1079C2;
+    text-align: center;
+    font-family: $montserat;
+    font-size: calc(24px + (42 - 24) * ((100vw - 768px) / (1900 - 768)));
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 75.6px */
+    letter-spacing: 0.42px;
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+    }
 }

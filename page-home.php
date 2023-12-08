@@ -367,17 +367,293 @@ get_header();
 
 <!-- flow -->
 <section class="Flow">
+<div class="OverlayImg">
+<svg  viewBox="0 0 192 821" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M154.48 139.838L154.48 42.9495L105.64 42.9495L105.64 128.486L71.32 128.486L71.32 42.9495L4 42.9495L4 0.181521L188.8 0.181529L188.8 139.838L154.48 139.838ZM3.99999 168.791L188.8 168.791L188.8 211.559L38.848 211.559L38.848 304.223L3.99999 304.223L3.99999 168.791ZM0.831981 414.521C0.831983 356.177 41.488 313.409 96.4 313.409C151.312 313.409 191.968 356.177 191.968 414.521C191.968 472.601 151.576 515.633 96.4 515.633C41.224 515.633 0.831978 472.601 0.831981 414.521ZM37.264 414.521C37.264 447.521 61.288 472.337 96.4 472.337C131.512 472.337 155.536 447.521 155.536 414.521C155.536 381.521 131.512 356.705 96.4 356.705C61.288 356.705 37.264 381.521 37.264 414.521ZM188.8 779.98L188.8 820.9L3.99997 760.444L3.99997 714.508L129.136 673.852L3.99997 631.876L3.99997 586.204L188.8 525.484L188.8 569.836L58.912 611.548L188.8 655.108L188.8 694.708L57.856 736.948L188.8 779.98Z" fill="#0065AE" fill-opacity="0.1"/>
+</svg>
+        </div>
     <div class="ReasonTitle">
         <h4>「暮らす家から楽しむ家へ」</h4>
         <h3>セキスイファミエスのリフォームの流れ</h3>
     </div>
     <div class="FlowContainer">
         <div class="FlowWrapper">
-            test
+            <ul class="FlowList">
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">01</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>ご相談</h3>
+                                <p>
+                                お住まいのお困りごと、ご希望、何でもお気軽にご相談下さい。知識・経験豊富なスタッフがアドバイス致します。　<br><br>
+
+①店舗でご相談→ 営業拠点案内 <br>
+②お電話でご相談→ フリーダイヤル（0120-816-048）<br>
+③ネットから→ ご相談/お見積りフォームへ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">02</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>現地調査</h3>
+                                <p>
+                                現在のお住まい（建物）の状態、構造、床下、配管などを調査・確認致します。（建物診断）お客様のお困りごと、ご要望を具体的に現実的に、解決や提案する為の大切な作業です。<br><br>
+
+※技術的なこと、費用的なこと、法規制的なことを正確に把握します。安心して住み続けることのできるリフォームをする為に、とても大切です。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">03</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>プラン提案</h3>
+                                <p>
+                                現地調査を踏まえての、ご希望、ご要望を形にしたプランを提案致します。<br><br>
+
+・現況図　・平面図　・パース図　・ARを提示し、わかりやすさに努めています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">04</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>お見積もり</h3>
+                                <p>
+                                お客様とのお打合せで完成した、ご希望が実現するプランでお見積りを提示します。工事内容、工事費用を丁寧にご説明致します。<br><br>
+
+※工事の範囲や、工事内容、設備仕様など、しっかりご確認下さい。ショールームへのご案内も致します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">05</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>ご契約</h3>
+                                <p>
+                                図面・仕様書・打合せ工事スケジュール・お見積書・資金計画※をご確認頂き、ご契約となります。<br><br>
+
+※資金計画<br>
+ローンをお考えのお客様には、ご契約の前に、ローンの審査をお願いしています<br>
+※リフォームのローンについて<br>
+提携の信販会社によるリフォームローン、住宅ローン残債がおありの方のローン計画立案などのご相談を承っています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">06</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>最終打合せ</h3>
+                                <p>
+                                図面、仕様書、工程表、お見積書の工事前最終確認です。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">07</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>着工・施工</h3>
+                                <p>
+                                着工前にご近所へご挨拶を行います。ご近所への配慮、安全のために養生をしっかり実施し、迅速、丁寧に工事を進めます。<br><br>
+
+※追加・変更が生じた場合<br>
+　書面にて追加変更内容を確認し、正確に進めます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="FlowListRow">
+                        <div class="FlowListLeft">
+                            <div class="FlowListSteps">
+                                <span class="StepName">Step</span>
+                                <span class="StepNumber">08</span>
+                            </div>
+                        </div>
+                        <div class="FlowListRight">
+                            <div class="FlowListContent">
+                                <h3>完成・引き渡し</h3>
+                                <p>
+                                会社にて工事完了着の検査を実施し、その後お客様と完成確認を致します。<br><br>
+
+リフォームを終えて   アフターサービス <br>
+工事図面をセキスイのデータベースに登録し、お客様の情報を保管、実施したリフォーム工事の問合せやご相談に対応致します。末永く、「住まいのコンシュルジュ」としてお付き合い頂けます。<br>
+※改装リフォームをされた方は、1年点検を実施
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 <!-- end of flow -->
+
+<!-- area -->
+<section class="Area">
+    <div class="Title">
+        <h3>AREA</h3>
+        <p>対応エリア</p>
+    </div>
+    <div class="CustomerTagline">
+        <h3>
+            セキスイファミエスでは<span class="ColorYellow">一都三県</span>を <br>
+            施工対応エリアとしております
+        </h3>
+    </div>
+    <div class="AreaContainer">
+        <div class="AreaImg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- end of area -->
+
+<!-- faq -->
+<section class="Faq">
+    <div class="Title">
+        <h3>FAQ</h3>
+        <p>よくあるご質問</p>
+        <div class="FaqTag">はじめての<span class="Color">リフォーム</span>よくある質問にお応えします</div>
+    </div>
+    <div class="FaqContainer">
+        <ul class="FaqList">
+            <li>
+                 <div class="FaqCard">
+                    <div class="FaqRow">
+                        <div class="FaqLeft">
+                            <div class="FaqQ">
+                                Q
+                            </div>
+                        </div>
+                        <div class="FaqRight">
+                            <h4>お見積もりは無料ですか</h4>
+                            <p>はい、お見積もりは無料で承っております。ホームページまたは、お電話・ＦＡＸでもお受けしております。 <br>
+どのようなご相談でも。まずはお気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                 </div>
+            </li>
+            <li>
+                 <div class="FaqCard">
+                    <div class="FaqRow">
+                        <div class="FaqLeft">
+                            <div class="FaqQ">
+                                Q
+                            </div>
+                        </div>
+                        <div class="FaqRight">
+                            <h4>工事途中で追加費用が必要な場合はありますか</h4>
+                            <p>
+                            リフォーム工事は、事前には確認できない部分等の状況により、費用に変更が生じる場合があります。<br>
+弊社では、事前の現場調査を行い、出来る限り工事途中の追加費用がかからないように努めております。
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </li>
+            <li>
+                 <div class="FaqCard">
+                    <div class="FaqRow">
+                        <div class="FaqLeft">
+                            <div class="FaqQ">
+                                Q
+                            </div>
+                        </div>
+                        <div class="FaqRight">
+                            <h4>住みながらのリフォーム工事は可能ですか</h4>
+                            <p>
+                            もちろん可能です。弊社では大型リフォームの場合には、仮住まいもおすすめしております。<br>
+仮住まいすることにより、コストダウンや工期短縮ができるメリットがあります。
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </li>
+            <li>
+                 <div class="FaqCard">
+                    <div class="FaqRow">
+                        <div class="FaqLeft">
+                            <div class="FaqQ">
+                                Q
+                            </div>
+                        </div>
+                        <div class="FaqRight">
+                            <h4>問い合わせ・相談の後に、しつこい営業はありませんか？</h4>
+                            <p>
+                            弊社ではお客様のご満足を一番に考えております。そのため、飛び込みや無理な営業は一切行なっておりません。<br>
+安心してご相談ください。
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- end of faq -->
 
 
 <?php
