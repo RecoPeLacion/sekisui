@@ -655,6 +655,151 @@ get_header();
 </section>
 <!-- end of faq -->
 
+<!-- contact -->
+<section class="Contact">
+    <div class="Title">
+        <h3>CONTACT</h3>
+        <p>お問い合わせ</p>
+    </div>
+    <div class="ContactContainer">
+        <div class="ContactWrapper">
+            <ul class="ContactList">
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust ContactMustHide">必須</span>
+                                <p>ご希望の内容をお知らせください</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>お名前</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>ふりがな</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust ContactMustHide">必須</span>
+                                <p>ご住所</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>郵便番号</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField ContactFieldSmall" placeholder="住所自動入力">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>都道府県</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField ContactFieldSmall">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>市区町村・番地</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>お電話番号</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>メールアドレス</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust">必須</span>
+                                <p>リフォームを検討中の建物</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <input type="text" class="ContactField">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end of contact -->
+
 
 <?php
 get_footer();
