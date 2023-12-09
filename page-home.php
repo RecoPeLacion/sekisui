@@ -790,11 +790,49 @@ get_header();
                             </div>
                         </div>
                         <div class="ContactRight">
-                            <input type="text" class="ContactField">
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            
+                        </div>
+                        <div class="ContactRight">
+                            <div class="ContactLink">
+                                <a href="#">個人情報保護方針について</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ContactRow">
+                        <div class="ContactLeft">
+                            <div class="ContactLabel">
+                                <span class="ContactMust ContactMustHide">必須</span>
+                                <p>その他・要望</p>
+                            </div>
+                        </div>
+                        <div class="ContactRight">
+                            <textarea name="" id="" cols="30" rows="10" class="ContactField"></textarea>
                         </div>
                     </div>
                 </li>
             </ul>
+            <div class="ContactButton">
+                <a href="#">お問い合わせをする</a>
+            </div>
+            <div class="ContactInquiry">
+                <h3>お電話でのお問い合わせ（24時間/365日）</h3>
+                <p>
+                ・リフォームをお考えの方 <br>
+                ・リフォーム費用を知りたい方 <br><br>
+                リフォームについてのご質問・ご相談、お気軽にお問い合わせください！ <br><br>
+                <span class="Color">TEL：0120−816−048</span> <br><br>
+                オペレーターがお電話を受け取り、後ほどご担当者よりお電話をさせていただきます。
+                </p>
+            </div>
         </div>
     </div>
 </section>

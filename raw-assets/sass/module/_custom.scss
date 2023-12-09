@@ -963,12 +963,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
 }
 
 .ContactRow {
     display: flex;
-    align-items: center;
     gap: 10px;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .ContactLeft {
@@ -983,13 +989,27 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
+    top: 5px;
     p {
         color: #000;
         font-family: YuGothic;
-        font-size: 16px;
+        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
         font-style: normal;
         font-weight: 700;
         line-height: 180%;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+            gap: 13px;
+        }
+    }
+}
+
+.ContactLink {
+    text-align: right;
+    a {
+        color: #1079C2;
+        text-decoration: none;
     }
 }
 
@@ -1002,15 +1022,22 @@
     justify-content: center;
     color: #FFF;
     font-family: YuGothic;
-    font-size: 16px;
+    font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
     font-style: normal;
     font-weight: 700;
     line-height: 180%;
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        width: 40px;
+    }
 }
 
 .ContactMustHide {
     opacity: 0;
     visibility: hidden;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .ContactField {
@@ -1022,8 +1049,80 @@
     border-radius: 4px;
 }
 
+textarea.ContactField {
+    height: 300px;
+    resize: none;
+    @media screen and (max-width: 767px) {
+        height: 200px;
+    }
+}
+
 .ContactFieldSmall {
     width: 220px;
+}
+
+.ContactButton {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+    a {
+        border-radius: 10px;
+        border: 1.386px solid #FFF;
+        background: linear-gradient(0deg, #8ED1FF 0%, #98D5FF 0.01%, #0070BD 46.88%, #98D5FF 100%);
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        text-align: center;
+        font-family: A-OTF Shin Go Pro;
+        font-size: calc(16px + (32 - 16) * ((100vw - 768px) / (1900 - 768)));
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        text-decoration: none;
+        height: calc(54px + (132 - 54) * ((100vw - 768px) / (1900 - 768)));
+        max-width: calc(340px + (840 - 340) * ((100vw - 768px) / (1900 - 768)));
+        width: 100%;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            height: 54px;
+            max-width: 340px;
+        }
+    }
+}
+
+.ContactInquiry {
+    padding: 40px 40px;
+    border: 1px solid #1079C2;
+    @media screen and (max-width: 767px) {
+        padding: 15px 15px;
+    }
+    h3 {
+        color: #1079C2;
+        font-family: YuGothic;
+        font-size: calc(16px + (24 - 16) * ((100vw - 768px) / (1900 - 768)));
+        font-style: normal;
+        font-weight: 700;
+        line-height: 180%;
+        margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;            
+        }
+    }
+    p {
+        font-weight: 700;
+        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        @media screen and (max-width: 767px) {
+           font-size: 12px; 
+        }
+    }
 }
 
 // faq 
