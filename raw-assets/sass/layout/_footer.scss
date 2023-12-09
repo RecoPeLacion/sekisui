@@ -1,0 +1,72 @@
+.Footer {
+    padding-top: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    padding-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.FooterContainer {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FooterRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.FooterLogo {
+    img {
+        max-width: 260px;
+        width: 100%;
+    }
+}
+
+.FoooterListRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.FooterListCol {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @media screen and (max-width: 767px) {
+            gap: 20px;
+        }
+        li {
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
+            a {
+                color: #1079C2;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.FooterSocial {
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 20px !important;
+    margin-top: 40px;
+}

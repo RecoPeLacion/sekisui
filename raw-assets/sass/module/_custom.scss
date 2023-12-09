@@ -856,6 +856,7 @@
     text-transform: uppercase;
     @media screen and (max-width: 767px) {
         font-size: 20px;
+        line-height: 20px;
     }
 }
 
@@ -870,6 +871,7 @@
     letter-spacing: 0.42px;
     @media screen and (max-width: 767px) {
         font-size: 20px;
+        line-height: 20px;
     }
 }
 
@@ -978,11 +980,32 @@
 }
 
 .ContactLeft {
-    width: 320px;
+    width: 330px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 .ContactRight {
     flex: 1;
+    &.ContactRightRadio {
+        .wpcf7-form-control {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            @media screen and (max-width: 767px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            label {
+                @media screen and (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+            .wpcf7-list-item {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 .ContactLabel {
@@ -1063,14 +1086,14 @@ textarea.ContactField {
 
 .ContactButton {
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     margin-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
     }
-    a {
+    a, input {
         border-radius: 10px;
         border: 1.386px solid #FFF;
         background: linear-gradient(0deg, #8ED1FF 0%, #98D5FF 0.01%, #0070BD 46.88%, #98D5FF 100%);
@@ -1090,6 +1113,9 @@ textarea.ContactField {
         display: flex;
         align-items: center;
         justify-content: center;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
         @media screen and (max-width: 767px) {
             font-size: 16px;
             height: 54px;
@@ -1101,6 +1127,10 @@ textarea.ContactField {
 .ContactInquiry {
     padding: 40px 40px;
     border: 1px solid #1079C2;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width: 767px) {
         padding: 15px 15px;
     }
