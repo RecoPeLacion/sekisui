@@ -286,6 +286,9 @@ get_header();
         <div class="ReasonContainer">
              <ul class="ReasonList">
                 <li>
+                    <div class="ReasonItem">
+                        <p>Reason <span class="ReasonNum">1</span></p>
+                    </div>
                     <div class="ReasonListRow">
                         <div class="ReasonListCol">
                             <div class="ReasonListContent">
@@ -307,6 +310,9 @@ get_header();
                     </div>
                 </li>
                 <li>
+                <div class="ReasonItem">
+                        <p>Reason <span class="ReasonNum">2</span></p>
+                    </div>
                     <div class="ReasonListRow">
                         <div class="ReasonListCol">
                             <div class="ReasonListContent">
@@ -328,6 +334,9 @@ get_header();
                     </div>
                 </li>
                 <li>
+                <div class="ReasonItem">
+                        <p>Reason <span class="ReasonNum">3</span></p>
+                    </div>
                     <div class="ReasonListRow">
                         <div class="ReasonListCol">
                             <div class="ReasonListContent">

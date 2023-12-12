@@ -40,7 +40,7 @@
     }
     h1 {
         color: #2A2A2A;
-        font-size: calc(32px + (62 - 32) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 62px;
         font-weight: 700;
         line-height: 180%;
         padding: calc(10px + (30 - 10) * ((100vw - 768px) / (1900 - 768)));
@@ -60,13 +60,14 @@
         display: block;
         background-color: #fff;
         padding: 15px 15px;
-        font-size: calc(14px + (24 - 14) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 24px;
         line-height: 180%;
         margin-bottom: calc(40px + (94 - 40) * ((100vw - 768px) / (1900 - 768)));
         @media screen and (max-width: 767px) {
             display: block;
             width: 390px;
             padding: 5px 5px;
+            font-size: 9px;
         }
         @media screen and (max-width: 425px) {
             display: inline-block;
@@ -154,9 +155,9 @@
             color: #fff;
             text-decoration: none;
             font-weight: 700;
-            font-size: calc(11px + (16 - 11) * ((100vw - 768px) / (1900 - 768)));
-            &:hover {
-                opacity: .8;
+            font-size: 24px;
+            @media screen and (max-width: 1130px) {
+                font-size: calc(11px + (24 - 11) * ((100vw - 768px) / (1130 - 768)));
             }
             @media screen and (max-width: 767px) {
                 background-color: #1079C2;
@@ -166,6 +167,9 @@
                 align-items: center;
                 justify-content: center;
                 font-size: 11px;
+            }
+            &:hover {
+                opacity: .8;
             }
         }
     }
@@ -212,7 +216,7 @@
     h3 {
         color: #000;
         text-align: center;
-        font-size: calc(18px + (42 - 18) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 42px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%;
@@ -227,7 +231,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 16px;
         @media screen and (max-width: 767px) {
             max-width: 340px;
             font-size: 12px;
@@ -340,6 +344,10 @@
 .WorksSliderContent {
     h4 {
         margin-bottom: 20px;
+        font-size: 24px;
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -406,16 +414,38 @@
     h3 {
         color: #fff;
         display: inline-block;
-        font-size: calc(25px + (42 - 25) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 42px;
         font-weight: 700;
         line-height: 180%;
+        @media screen and (max-width: 1005px) {
+            font-size: calc(25px + (42 - 25) * ((100vw - 768px) / (1005 - 768)));
+        }
         @media screen and (max-width: 767px) {
             font-size: 12px;
         }
         .ColorYellow {
-            font-size: calc(30px + (52 - 30) * ((100vw - 768px) / (1900 - 768)));
+            font-size: 52px;
+            position: relative;
+            @media screen and (max-width: 1005px) {
+                font-size: calc(15px + (52 - 15) * ((100vw - 768px) / (1005 - 768)));
+            }
             @media screen and (max-width: 767px) {
-                font-size: 14px;
+                font-size: 16px;
+            }
+            &::before {
+                content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21" fill="none"><line x1="0.822192" y1="6.64075" x2="9.82219" y2="19.6408" stroke="%23FAFF00" stroke-width="2"/><line x1="13.9691" y1="1.96349" x2="17.8663" y2="17.2871" stroke="%23FAFF00" stroke-width="2"/><line x1="26.6773" y1="0.0927794" x2="25.2104" y2="15.836" stroke="%23FAFF00" stroke-width="2"/></svg>');
+                position: absolute;
+                width: 25px;
+                height: 20px;
+                top: -50px;
+                left: -20px;
+                @media screen and (max-width: 767px) {
+                    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="5" viewBox="0 0 7 5" fill="none"><line x1="0.18535" y1="1.49717" x2="2.21425" y2="4.4278" stroke="%23FAFF00" stroke-width="0.450867"/><line x1="3.14817" y1="0.442972" x2="4.0267" y2="3.89742" stroke="%23FAFF00" stroke-width="0.450867"/><line x1="6.01352" y1="0.0209156" x2="5.68282" y2="3.56996" stroke="%23FAFF00" stroke-width="0.450867"/></svg>');
+                    width: 6px;
+                    height: 5px;
+                    left: -5px;
+                    top: -15px;
+                }
             }
         }
     }
@@ -426,7 +456,9 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 1400px) {
+    padding-left: 164px;
+    padding-right: 164px;
+    @media screen and (max-width: 767px) {
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -456,13 +488,6 @@
     font-size: 24px;
     font-weight: 700;
     font-family: A-OTF Shin Go Pro;
-    @media screen and (max-width: 1400px) {
-        width: 80px;
-        height: 80px;
-        font-size: 16px;
-        top: -33px;
-        left: -33px;
-    }
     @media screen and (max-width: 767px) {
         width: 30px;
         height: 30px;
@@ -546,7 +571,7 @@
         color: #000;
         text-align: center;
         font-family: YuGothic;
-        font-size: calc(18px + (42 - 18) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 42px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%;
@@ -558,7 +583,7 @@
         color: #1079C2;
         text-align: center;
         font-family: YuGothic;
-        font-size: calc(24px + (62 - 24) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 62px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%; 
@@ -588,6 +613,41 @@
         gap: 50px;
         padding: 0 20px;
     }
+    li {
+        position: relative;
+        .ReasonItem {
+            transform: rotate(-25.86deg);
+            display: inline-block;
+            position: absolute;
+            left: -50px;
+            top: -75px;
+            @media screen and (max-width: 900px) {
+                left: -20px;
+                top: -30px;
+            }
+            p {
+                display: inline-block;
+                font-family: $cav;
+                color: #1079C2;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 180%; /* 64.8px */
+                @media screen and (max-width: 900px) {
+                    font-size: 14px;
+                }
+                .ReasonNum {
+                    font-size: 52px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 180%;
+                    @media screen and (max-width: 900px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .ReasonListRow {
@@ -603,7 +663,7 @@
     h3 {
         color: #000;
         font-family: YuGothic;
-        font-size: calc(20px + (32 - 20) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 32px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%;
@@ -615,7 +675,7 @@
     }
     p {
         font-weight: 700;
-        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 16px;
         @media screen and (max-width: 767px) {
             font-size: 12px;
         }
@@ -705,6 +765,7 @@
         position: absolute;
         right: 0;
         top: calc(0px + (-368 - 0) * ((100vw - 768px) / (1900 - 768)));
+        z-index: 1;
         @media screen and (max-width: 767px) {
             width: 53px;
             height: 384px;
@@ -864,10 +925,10 @@
     color: #fff;
     text-align: center;
     font-family: $montserat;
-    font-size: calc(20px + (42 - 20) * ((100vw - 768px) / (1900 - 768)));
+    font-size: 42px;
     font-style: normal;
     font-weight: 700;
-    line-height: calc(20px + (42 - 20) * ((100vw - 768px) / (1900 - 768)));
+    line-height: 42px;
     letter-spacing: 0.42px;
     @media screen and (max-width: 767px) {
         font-size: 20px;
@@ -888,19 +949,20 @@
     h3 {
         color: #1079C2;
         font-family: YuGothic;
-        font-size: calc(24px + (36 - 24) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 36px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         margin-bottom: 20px;
         @media screen and (max-width: 767px) {
-           font-size: 24px; 
+           font-size: 24px;
+           text-align: center;
         }
     }
     p {
         color: #000;
         font-family: YuGothic;
-        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%;
@@ -919,6 +981,11 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    .ColorYellow {
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .AreaContainer {
@@ -936,7 +1003,13 @@
     display: flex;
     align-items: center;
     img {
+        max-width: 1090px;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: 767px) {
+            max-width: 341px;
+        }
     }
 }
 
@@ -966,6 +1039,10 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: calc(40px + (100 - 40) * ((100vw - 768px) / (1900 - 768)));
+    max-width: 930px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
     }
@@ -1137,7 +1214,7 @@ textarea.ContactField {
     h3 {
         color: #1079C2;
         font-family: YuGothic;
-        font-size: calc(16px + (24 - 16) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%;
@@ -1148,7 +1225,7 @@ textarea.ContactField {
     }
     p {
         font-weight: 700;
-        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 16px;
         @media screen and (max-width: 767px) {
            font-size: 12px; 
         }
@@ -1167,6 +1244,12 @@ textarea.ContactField {
 
 .FaqTag {
     font-weight: 700;
+    font-size: 24px;
+    display: block;
+    margin-top: 15px;
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 
 .FaqContainer {
@@ -1210,7 +1293,7 @@ textarea.ContactField {
     h4 {
         color: #1079C2;
         font-family: YuGothic;
-        font-size: calc(14px + (24 - 14) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%; /* 43.2px */
@@ -1223,7 +1306,7 @@ textarea.ContactField {
     p {
         color: #000;
         font-family: YuGothic;
-        font-size: calc(12px + (16 - 12) * ((100vw - 768px) / (1900 - 768)));
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%; /* 28.8px */

@@ -56,6 +56,7 @@ add_action( 'admin_enqueue_scripts', 'theme_options_load_admin_scripts' );
 */
 function zeroten_styles(){
    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/base.min.css' );
+   wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/css/custom.css' );
    wp_enqueue_style( 'flip', get_template_directory_uri() . '/assets/css/flip.min.css' );
    wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/slick.css' );
    wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/assets/css/slick-theme.css' );

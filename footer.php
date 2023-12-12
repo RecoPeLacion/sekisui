@@ -37,10 +37,10 @@ $logo = esc_attr( get_option( 'logo_url' ) );
 								<li>
 									<a href="#">利用規約</a>
 								</li>
-								<li>
+								<li class="HideMobile">
 									<a href="#">プライバシーポリシー</a>
 								</li>
-								<li>
+								<li class="HideMobile">
 									<a href="#">個人情報保護方針</a>
 								</li>
 								<li>
@@ -89,6 +89,14 @@ $logo = esc_attr( get_option( 'logo_url' ) );
   </defs>
 </svg>
 									</a>
+								</li>
+							</ul>
+							<ul class="HideDesk">
+								<li>
+									<a href="#">プライバシーポリシー</a>
+								</li>
+								<li>
+									<a href="#">個人情報保護方針</a>
 								</li>
 							</ul>
 						</div>
